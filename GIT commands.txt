@@ -5,6 +5,7 @@ git config --global
 git config --global user.name "James Kovack"
 git config --global user.email "somemail@abv.bg"
 git config --global --alias.lga "log --graph --oneline --all --decorate"
+
 //OPTIONAL
 git config --global core.editor vim/notepad
 git config --global core.autocrlf true|false|input
@@ -35,20 +36,21 @@ git reset --soft HEAD~1 ====will redo the changes and left them into stage area
 git reset --hard dd687as ====total reset
 
 //REMOVE FILES
-git clean -n ====see what will happen
-git clean -f ====remove files
-git checkout -- . ===remove all changes
+git clean -n ==== list which files will be afected
+git clean -f ==== remove files
+git checkout -- . === remove all changes
 
+//GIT LOGS
 git log
 git shortlog
-git shortlog -sne ====list order of the commits autors
-git reflog ==== keeps log history
-git show HEAD ====what was the last commit
+git shortlog -sne ====list the commits authors
+git reflog ==== keeps commit history and may use it to access to all removed commits / data is available for the last 30 days
+git show HEAD ==== what was the last commit
 
 
 //TAGS
-git tag tagname2 ====create checkpoints
-git push --tags
+git tag tagname2 ==== create checkpoints
+git push --tags ==== push tags to remote repository
 
 //REMOTE REPOSITORIES
 git clone https://github.com/dfff
@@ -56,7 +58,7 @@ git log --oneline | wc -l  ====show numbers of commits
 
 git remote ====show list of remote repos
 git remote -v ====show list of remote repos
-git remote add origin https://github.com/dfff ====pull the remote repos to local working copy
+git remote add origin https://github.com/dfff ==== pull the remote repos to local working copy
 git remote rm origin ==== remove remote repo
 git branch -r ==== list remote branches
 
@@ -76,9 +78,9 @@ git push
 git branch
 git branch myBranch
 git checkout branch
-git branch -d myBranch ====delete branch
-git branch -D myBranch ====delete branch force option
-git checkout -b newBranch =====creation and checkout into the branch
+git branch -d myBranch ==== delete branch
+git branch -D myBranch ==== delete branch force option
+git checkout -b newBranch ===== creation and checkout into the branch
 
 
 //MERGEING
