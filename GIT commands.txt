@@ -1,0 +1,93 @@
+git config --global
+
+
+//CONFIGURATION
+git config --global user.name "James Kovack"
+git config --global user.email "somemail@abv.bg"
+git config --global --alias.lga "log --graph --oneline --all --decorate"
+//OPTIONAL
+git config --global core.editor vim/notepad
+git config --global core.autocrlf true|false|input
+
+//VIEW THE CONFIGS
+cat ~/.gitconfig ==== file in the git folder
+git config --global --list
+
+//INITIALISING REPOSITORY
+git init
+
+//STATUS AND ADDING FILES TO STAGE AREA
+git status
+git add file2.txt ====add selected file
+git add -A ==== add all files
+git add -u ==== for add files updates only
+
+//COMMIT CHANGES
+git commit -m "some text message"
+
+//VIEW DIFFERENCES
+git diff dd6817..a12ec6
+git diff hEAD~1..    git diff hEAD~1..HEAD
+
+
+//RESETING
+git reset --soft HEAD~1 ====will redo the changes and left them into stage area
+git reset --hard dd687as ====total reset
+
+//REMOVE FILES
+git clean -n ====see what will happen
+git clean -f ====remove files
+git checkout -- . ===remove all changes
+
+git log
+git shortlog
+git shortlog -sne ====list order of the commits autors
+git reflog ==== keeps log history
+git show HEAD ====what was the last commit
+
+
+//TAGS
+git tag tagname2 ====create checkpoints
+git push --tags
+
+//REMOTE REPOSITORIES
+git clone https://github.com/dfff
+git log --oneline | wc -l  ====show numbers of commits
+
+git remote ====show list of remote repos
+git remote -v ====show list of remote repos
+git remote add origin https://github.com/dfff ====pull the remote repos to local working copy
+git remote rm origin ==== remove remote repo
+git branch -r ==== list remote branches
+
+
+git fetch ====pull down any changes from remote repository
+git fetch origin
+git merge origin/master ====mergin remote branches
+
+git branch --set-upstream
+git pull ====fetch+merge
+git pull origin master
+
+git push
+
+
+//BRANCHING
+git branch
+git branch myBranch
+git checkout branch
+git branch -d myBranch ====delete branch
+git branch -D myBranch ====delete branch force option
+git checkout -b newBranch =====creation and checkout into the branch
+
+
+//MERGEING
+git merge branchNamne
+git merge --abort
+git mergetool
+
+
+
+
+
+
