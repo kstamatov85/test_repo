@@ -4,7 +4,7 @@ git config --global
 //CONFIGURATION
 git config --global user.name "James Kovack"
 git config --global user.email "somemail@abv.bg"
-git config --global --alias.lga "log --graph --oneline --all --decorate"
+git config --global alias.lga "log --graph --oneline --all --decorate"
 
 //OPTIONAL
 git config --global core.editor vim/notepad
