@@ -4,3 +4,8 @@ http://www.lessmilk.com/phaser-tutorial/
 http://www.sitepoint.com/javascript-game-programming-using-phaser/
 http://gamedevelopment.tutsplus.com/tutorials/getting-started-with-phaser-building-monster-wants-candy--cms-21723
 http://gamedevelopment.tutsplus.com/articles/how-to-learn-the-phaser-html5-game-engine--gamedev-13643
+
+
+Website: https://egghead.io
+Username: trainee@internovusbg.com 
+Password: internovus123
